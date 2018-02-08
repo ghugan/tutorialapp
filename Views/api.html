@@ -68,7 +68,7 @@
           <p>Posted on February 5, 2018 at 12:00 PM</p>
           <hr>
           <h2>URL:Authentication</h2>
-          <p class="lead">https://oip.tmrnd.com.my:8083/api/auth/login</p>
+          <p class="lead">https://api.oip.tm.com.my/app/iot/1.0/api/auth/login</p>
           <hr>
           <h2>METHOD</h2>
           <p class="lead">POST</p>
@@ -76,8 +76,8 @@
 
           <h2>BODY</h2>
           <p class="lead">{ <br>
-            "username": "ishak@tmrnd.com.my", <br>
-            "password": "nice" <br>
+            "username": "oip@tmrnd.com.my", <br>
+            "password": "oip@tmrnd01" <br>
           }</p>
           <hr>
           <h2>RESPONSE</h2>
@@ -99,7 +99,7 @@
           <hr>
 
           <h2>URL:Get 1 day Time Series data</h2>
-          <p class="lead">https://oip.tmrnd.com.my:8083/api/plugins/telemetry/DEVICE/<b>ID</b>/values/timeseries?keys=rsrp&startTs=1517356800000&endTs=1517452579609&interval=60000&limit=100&agg=NONE</p>
+          <p class="lead">https://api.oip.tm.com.my/app/iot/1.0/api/plugins/telemetry/DEVICE/<b>ID</b>/values/timeseries?keys=rsrp&startTs=1517356800000&endTs=1517452579609&interval=60000&limit=100&agg=NONE</p>
           <h4>Parameters</h4>
           <p class="lead">keys=rsrp <br>
             startTs=1517356800000 <br>
@@ -111,12 +111,12 @@
 
           <h2>  How to get the DEVICE ID?</h2>
           <a class="fancybox" href="../images/id.jpg"><img class="img-fluid rounded" src="../images/id.jpg" alt=""></a>
-
+          <br> <br>
           <p class="lead">Open Thingsboard, go to devices and click on “copy device id” button to copy the ID. Replace the ID with copied values from clipboard.</p>
           <hr>
 
           <h2>NEW URL:Get 1 day Time Series data</h2>
-          <p class="lead">https://oip.tmrnd.com.my:8083/api/plugins/telemetry/DEVICE/<b>f8e55fe0-f412-11e7-a1c7-7b87cd3d8f53</b>/values/timeseries?keys=rsrp&startTs=1517356800000&endTs=1517452579609&interval=60000&limit=100&agg=NONE</p>
+          <p class="lead">https://api.oip.tm.com.my/app/iot/1.0/api/plugins/telemetry/DEVICE/<b>f8e55fe0-f412-11e7-a1c7-7b87cd3d8f53</b>/values/timeseries?keys=rsrp&startTs=1517356800000&endTs=1517452579609&interval=60000&limit=100&agg=NONE</p>
           <h4>Parameters</h4>
           <p class="lead">keys=rsrp <br>
             startTs=1517356800000 <br>
@@ -130,8 +130,8 @@
           <hr>
           <h2>AUTHENTICATION SCHEMA</h2>
           <p class="lead">Basic </p>
-          <p class="lead">Username: ishak@tmrnd.com.my <br>
-          Password: nice </p>
+          <p class="lead">Username: oip@tmrnd.com.my <br>
+          Password: oip@tmrnd01 </p>
           <hr>
 
           <h2>QUERY HEADERS</h2>
