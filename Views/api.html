@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Blog Post - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/blog-post.css" rel="stylesheet">
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../js/fancyBox/source/jquery.fancybox.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="../js/fancyBox/source/jquery.fancybox.pack.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <div class="navbar-brand" href="#">Qlik Sense Desktop</div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../home">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+
+          <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle active color " data-toggle="dropdown" role="button"  aria-expanded="false">Tutorials <span class="caret"></span></a>
+            <ul class="black dropdown-menu">
+              <li><a id="installBtn" class="nav-link black" href="../install">Installation</a></li>
+              <li><a id="dataBtn" class="nav-link black " href="../data">Make Dashboard</a></li>
+              <li><a id="restBtn" class="nav-link black " href="api">REST API</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+          <!-- Title -->
+          <h1 class="mt-4">REST API</h1>
+
+          <!-- Date/Time -->
+          <p>Posted on February 5, 2018 at 12:00 PM</p>
+          <hr>
+          <h2>URL:Authentication</h2>
+          <p class="lead">https://oip.tmrnd.com.my:8083/api/auth/login</p>
+          <hr>
+          <h2>METHOD</h2>
+          <p class="lead">POST</p>
+          <hr>
+
+          <h2>BODY</h2>
+          <p class="lead">{ <br>
+            "username": "ishak@tmrnd.com.my", <br>
+            "password": "nice" <br>
+          }</p>
+          <hr>
+          <h2>RESPONSE</h2>
+           <p class="lead">{ <br>
+              <b>"token":</b> "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpc2hha0B0bXJuZC5jb20ubXkiLCJzY29wZXMiOlsiQ1V<br>
+              TVE9NRVJfVVNFUiJdLCJ1c2VySWQiOiIyOThhMzk5MC1mNDEzLTExZTctYTFjNy03Yjg3Y2QzZDhmNTMiLCJlbmFibGVk<br>
+              Ijp0cnVlLCJpc1B1YmxpYyI6ZmFsc2UsInRlbmFudElkIjoiY2JhNDRhODAtOWZjZS0xMWU2LTgwODAtODA4MDgwODA4M<br>
+              DgwIiwiY3VzdG9tZXJJZCI6IjBkNjY2NWUwLWY0MTMtMTFlNy1hMWM3LTdiODdjZDNkOGY1MyIsImlzcyI6InRoaW5nc2<br>
+              JvYXJkLmlvIiwiaWF0IjoxNTE3Mjk4MjE0LCJleHAiOjE1MjYyOTgyMTR9.mcWaKiULcohgozIsavojuaZuI6HGCSNOlI<br>
+              5PitC51ZGl4kRXyUJorPpFjfWpvhg9LWCKMb93CbnYihFvgjtrag",<br>
+              <br>
+              <b>"refreshToken":</b> "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpc2hha0B0bXJuZC5jb20ubXkiLCJzY29wZXMi<br>
+              OlsiUkVGUkVTSF9UT0tFTiJdLCJ1c2VySWQiOiIyOThhMzk5MC1mNDEzLTExZTctYTFjNy03Yjg3Y2QzZDhmNTMiLCJpc<br>
+              1B1YmxpYyI6ZmFsc2UsImlzcyI6InRoaW5nc2JvYXJkLmlvIiwianRpIjoiZmE0MzgwM2QtN2M5Ni00NmI2LWI0OGYtNz<br>
+              k3NWU1M2M2NWQxIiwiaWF0IjoxNTE3Mjk4MjE0LCJleHAiOjE1NTMyOTgyMTR9.Xx_qQGYGJi99GyH-uHpJamUcEr_ylU<br>
+              ZS6ZwS-xkBL1CmGvePalx-pl7pa8anrwaLJMLBY8W4uJxpyEoaqrlNNw"<br>
+            }</p>
+
+          <hr>
+
+          <h2>URL:Get 1 day Time Series data</h2>
+          <p class="lead">https://oip.tmrnd.com.my:8083/api/plugins/telemetry/DEVICE/<b>ID</b>/values/timeseries?keys=rsrp&startTs=1517356800000&endTs=1517452579609&interval=60000&limit=100&agg=NONE</p>
+          <h4>Parameters</h4>
+          <p class="lead">keys=rsrp <br>
+            startTs=1517356800000 <br>
+            endTs=1517452579609 <br>
+            interval=60000 <br>
+            limit=100 <br>
+            agg=NONE</p>
+          <hr>
+
+          <h2>  How to get the DEVICE ID?</h2>
+          <a class="fancybox" href="../images/id.jpg"><img class="img-fluid rounded" src="../images/id.jpg" alt=""></a>
+
+          <p class="lead">Open Thingsboard, go to devices and click on “copy device id” button to copy the ID. Replace the ID with copied values from clipboard.</p>
+          <hr>
+
+          <h2>NEW URL:Get 1 day Time Series data</h2>
+          <p class="lead">https://oip.tmrnd.com.my:8083/api/plugins/telemetry/DEVICE/<b>f8e55fe0-f412-11e7-a1c7-7b87cd3d8f53</b>/values/timeseries?keys=rsrp&startTs=1517356800000&endTs=1517452579609&interval=60000&limit=100&agg=NONE</p>
+          <h4>Parameters</h4>
+          <p class="lead">keys=rsrp <br>
+            startTs=1517356800000 <br>
+            endTs=1517452579609 <br>
+            interval=60000 <br>
+            limit=100 <br>
+            agg=NONE</p>
+          <hr>
+          <h2>METHOD</h2>
+          <p class="lead">Get </p>
+          <hr>
+          <h2>AUTHENTICATION SCHEMA</h2>
+          <p class="lead">Basic </p>
+          <p class="lead">Username: ishak@tmrnd.com.my <br>
+          Password: nice </p>
+          <hr>
+
+          <h2>QUERY HEADERS</h2>
+          <p>Name: X-Authorization <br>
+          Value: Bearer token</p>
+
+          <hr>
+
+
+
+          <!-- Comment with nested comments -->
+          <div class="media mb-4">
+
+          </div>
+
+        </div>
+
+<!-- Sidebar Widgets Column -->
+<div class="col-md-4">
+
+
+  <!-- Side Widget -->
+  <div class="card my-4">
+    <h5 class="card-header">Oip News</h5>
+    <div class="card-body">
+      Coming Soon ...
+    </div>
+  </div>
+
+</div>
+
+
+
+
+      </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Open Innovation Platform 2018</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".fancybox").fancybox();
+
+
+  });
+</script>
+</html>
