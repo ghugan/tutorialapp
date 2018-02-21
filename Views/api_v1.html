@@ -68,7 +68,7 @@
           <p>Posted on February 5, 2018 at 12:00 PM</p>
           <hr>
           <h2>URL:Authentication</h2>
-          <p class="lead">https://iot.oip.tm.com.my/api/auth/login</p>
+          <p class="lead">https://api.oip.tm.com.my/app/iot/1.0/api/auth/login</p>
           <hr>
           <h2>METHOD</h2>
           <p class="lead">POST</p>
@@ -76,46 +76,66 @@
 
           <h2>BODY</h2>
           <p class="lead">{ <br>
-            "username": "tenant@mmu.edu.my", <br>
-            "password": "p@ssw0rd" <br>
+            "username": "oip@tmrnd.com.my", <br>
+            "password": "oip@tmrnd01" <br>
           }</p>
           <hr>
           <h2>RESPONSE</h2>
            <p class="lead">{ <br>
-              <b>"token":</b> "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZW5hbnRAbW11LmVkdS5teSIsInNjb3BlcyI6WyJURU5B<br>
-              TlRfQURNSU4iXSwidXNlcklkIjoiZWM2YjRlZDAtMDE3Zi0xMWU4LTk1NjAtZTkxZjhmNGQ3YmFmIiwiZW5hYmxlZCI6dH<br>
-              J1ZSwiaXNQdWJsaWMiOmZhbHNlLCJ0ZW5hbnRJZCI6ImVjZDFjODIwLWZiZjUtMTFlNy1hZTJlLWU5MWY4ZjRkN2JhZiIs<br>
-              ImN1c3RvbWVySWQiOiIxMzgxNDAwMC0xZGQyLTExYjItODA4MC04MDgwODA4MDgwODAiLCJpc3MiOiJ0aGluZ3Nib2FyZ<br>
-              C5pbyIsImlhdCI6MTUxOTE4MDA0OSwiZXhwIjoxNTI4MTgwMDQ5fQ.JfTv-FVbQG_5Xm2hy-KKo7iqjhK12N-6WJR2SvJ<br>
-              fbFZACwKUk-imc3Dur4FOYzjZxR6gFcQj9y-aHxDwcCI2vw",<br>
+              <b>"token":</b> "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpc2hha0B0bXJuZC5jb20ubXkiLCJzY29wZXMiOlsiQ1V<br>
+              TVE9NRVJfVVNFUiJdLCJ1c2VySWQiOiIyOThhMzk5MC1mNDEzLTExZTctYTFjNy03Yjg3Y2QzZDhmNTMiLCJlbmFibGVk<br>
+              Ijp0cnVlLCJpc1B1YmxpYyI6ZmFsc2UsInRlbmFudElkIjoiY2JhNDRhODAtOWZjZS0xMWU2LTgwODAtODA4MDgwODA4M<br>
+              DgwIiwiY3VzdG9tZXJJZCI6IjBkNjY2NWUwLWY0MTMtMTFlNy1hMWM3LTdiODdjZDNkOGY1MyIsImlzcyI6InRoaW5nc2<br>
+              JvYXJkLmlvIiwiaWF0IjoxNTE3Mjk4MjE0LCJleHAiOjE1MjYyOTgyMTR9.mcWaKiULcohgozIsavojuaZuI6HGCSNOlI<br>
+              5PitC51ZGl4kRXyUJorPpFjfWpvhg9LWCKMb93CbnYihFvgjtrag",<br>
               <br>
-              <b>"refreshToken":</b> "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZW5hbnRAbW11LmVkdS5teSIsInNjb3BlcyI6Wy<br>
-              JSRUZSRVNIX1RPS0VOIl0sInVzZXJJZCI6ImVjNmI0ZWQwLTAxN2YtMTFlOC05NTYwLWU5MWY4ZjRkN2JhZiIsImlzUHVib<br>
-              GljIjpmYWxzZSwiaXNzIjoidGhpbmdzYm9hcmQuaW8iLCJqdGkiOiIyYWEyYTExYS0xMDE1LTRiNTAtYmIxNy0yYWNlMTNm<br>
-              ZjFlOGEiLCJpYXQiOjE1MTkxODAwNDksImV4cCI6MTU1NTE4MDA0OX0.oQmwvNgrB4G_8s7B3qmkOHiZUCJZjp_S61ZFISG<br>
-              9hpSeHGg0u-Ubyts-fH_Kr9kY4FXWYRf3QnMfuCbgP_bHQw"<br>
+              <b>"refreshToken":</b> "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpc2hha0B0bXJuZC5jb20ubXkiLCJzY29wZXMi<br>
+              OlsiUkVGUkVTSF9UT0tFTiJdLCJ1c2VySWQiOiIyOThhMzk5MC1mNDEzLTExZTctYTFjNy03Yjg3Y2QzZDhmNTMiLCJpc<br>
+              1B1YmxpYyI6ZmFsc2UsImlzcyI6InRoaW5nc2JvYXJkLmlvIiwianRpIjoiZmE0MzgwM2QtN2M5Ni00NmI2LWI0OGYtNz<br>
+              k3NWU1M2M2NWQxIiwiaWF0IjoxNTE3Mjk4MjE0LCJleHAiOjE1NTMyOTgyMTR9.Xx_qQGYGJi99GyH-uHpJamUcEr_ylU<br>
+              ZS6ZwS-xkBL1CmGvePalx-pl7pa8anrwaLJMLBY8W4uJxpyEoaqrlNNw"<br>
             }</p>
 
           <hr>
 
-          <h2>URL:Get Humidity,temperature and movement data</h2>
-          <p class="lead">https://iot.oip.tm.com.my/api/plugins/telemetry/DEVICE/abb19270-0c6d-11e8-878d-e91f8f4d7baf/values/timeseries?keys=temperature,humidity,movement</p>
+          <h2>URL:Get 1 day Time Series data</h2>
+          <p class="lead">https://api.oip.tm.com.my/app/iot/1.0/api/plugins/telemetry/DEVICE/<b>ID</b>/values/timeseries?keys=rsrp&startTs=1517356800000&endTs=1517452579609&interval=60000&limit=100&agg=NONE</p>
           <h4>Parameters</h4>
-          <p class="lead">keys=temperature,humidity,movement <br>
-            
-         
+          <p class="lead">keys=rsrp <br>
+            startTs=1517356800000 <br>
+            endTs=1517452579609 <br>
+            interval=60000 <br>
+            limit=100 <br>
+            agg=NONE</p>
+          <hr>
+
+          <h2>  How to get the DEVICE ID?</h2>
+          <a class="fancybox" href="../images/id.jpg"><img class="img-fluid rounded" src="../images/id.jpg" alt=""></a>
+          <br> <br>
+          <p class="lead">Open Thingsboard, go to devices and click on “copy device id” button to copy the ID. Replace the ID with copied values from clipboard.</p>
+          <hr>
+
+          <h2>NEW URL:Get 1 day Time Series data</h2>
+          <p class="lead">https://api.oip.tm.com.my/app/iot/1.0/api/plugins/telemetry/DEVICE/<b>f8e55fe0-f412-11e7-a1c7-7b87cd3d8f53</b>/values/timeseries?keys=rsrp&startTs=1517356800000&endTs=1517452579609&interval=60000&limit=100&agg=NONE</p>
+          <h4>Parameters</h4>
+          <p class="lead">keys=rsrp <br>
+            startTs=1517356800000 <br>
+            endTs=1517452579609 <br>
+            interval=60000 <br>
+            limit=100 <br>
+            agg=NONE</p>
           <hr>
           <h2>METHOD</h2>
           <p class="lead">Get </p>
           <hr>
           <h2>AUTHENTICATION SCHEMA</h2>
           <p class="lead">Basic </p>
-          <p class="lead">Username: tenant@mmu.edu.my <br>
-          Password: p@ssw0rd </p>
+          <p class="lead">Username: oip@tmrnd.com.my <br>
+          Password: oip@tmrnd01 </p>
           <hr>
 
           <h2>QUERY HEADERS</h2>
-          <p class="lead">Name: X-Authorization <br>
+          <p>Name: X-Authorization <br>
           Value: Bearer token</p>
 
           <hr>
