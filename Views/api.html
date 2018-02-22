@@ -73,21 +73,25 @@
           <h2>METHOD</h2>
           <p class="lead">POST</p>
           <hr>
+          <h2>QUERY HEADERS</h2>
+          <p class="lead">Name: Authorization <br>
+          Value: Bearer 2cf613f9-df94-33d0-a9de-13d07fb59f20</p>
 
+          <hr>
           <h2>BODY</h2>
           <p class="lead">{ <br>
-            "username": "tenant@mmu.edu.my", <br>
-            "password": "p@ssw0rd" <br>
+            "username": "demo@mmudc.com", <br>
+            "password": "Demo_123" <br>
           }</p>
           <hr>
           <h2>RESPONSE</h2>
            <p class="lead">{ <br>
-              <b>"token":</b> "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZW5hbnRAbW11LmVkdS5teSIsInNjb3BlcyI6WyJURU5B<br>
-              TlRfQURNSU4iXSwidXNlcklkIjoiZWM2YjRlZDAtMDE3Zi0xMWU4LTk1NjAtZTkxZjhmNGQ3YmFmIiwiZW5hYmxlZCI6dH<br>
-              J1ZSwiaXNQdWJsaWMiOmZhbHNlLCJ0ZW5hbnRJZCI6ImVjZDFjODIwLWZiZjUtMTFlNy1hZTJlLWU5MWY4ZjRkN2JhZiIs<br>
-              ImN1c3RvbWVySWQiOiIxMzgxNDAwMC0xZGQyLTExYjItODA4MC04MDgwODA4MDgwODAiLCJpc3MiOiJ0aGluZ3Nib2FyZ<br>
-              C5pbyIsImlhdCI6MTUxOTE4MDA0OSwiZXhwIjoxNTI4MTgwMDQ5fQ.JfTv-FVbQG_5Xm2hy-KKo7iqjhK12N-6WJR2SvJ<br>
-              fbFZACwKUk-imc3Dur4FOYzjZxR6gFcQj9y-aHxDwcCI2vw",<br>
+              <b>"token":</b> "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkZW1vQG1tdWRjLmNvbSIsInNjb3BlcyI6WyJDVVNUT01FUl<br>
+              9VU0VSIl0sInVzZXJJZCI6IjMzZDhjMmIwLTE2YjctMTFlOC1hY2UxLWU5MWY4ZjRkN2JhZiIsImVuYWJsZWQiOnRydWUsIm<br>
+              lzUHVibGljIjpmYWxzZSwidGVuYW50SWQiOiJlY2QxYzgyMC1mYmY1LTExZTctYWUyZS1lOTFmOGY0ZDdiYWYiLCJjdXN0b2<br>
+              1lcklkIjoiMzNiMDUzMjAtMTZiNy0xMWU4LWFjZTEtZTkxZjhmNGQ3YmFmIiwiaXNzIjoidGhpbmdzYm9hcmQuaW8iLCJpYX<br>
+              QiOjE1MTkyNzQ4NzQsImV4cCI6MTUyODI3NDg3NH0.J7tUBBZk_R5GPfPf9_gcfSag211WQUO4Z5B3_r2_eon7jcymretNV-<br>
+              zGYRofykBBNH26cjtXs4AoAFwkfxBafw",<br>
               <br>
               <b>"refreshToken":</b> "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZW5hbnRAbW11LmVkdS5teSIsInNjb3BlcyI6Wy<br>
               JSRUZSRVNIX1RPS0VOIl0sInVzZXJJZCI6ImVjNmI0ZWQwLTAxN2YtMTFlOC05NTYwLWU5MWY4ZjRkN2JhZiIsImlzUHVib<br>
@@ -98,10 +102,10 @@
 
           <hr>
 
-          <h2>URL:Get Humidity,temperature and movement data</h2>
-          <p class="lead">https://iot.oip.tm.com.my/api/plugins/telemetry/DEVICE/abb19270-0c6d-11e8-878d-e91f8f4d7baf/values/timeseries?keys=temperature,humidity,movement</p>
+          <h2>URL:Get Humidity and temperature data</h2>
+          <p class="lead">https://api.oip.tm.com.my/app/iot/1.0/api/plugins/telemetry/DEVICE/365ad9b0-16b7-11e8-ace1-e91f8f4d7baf/values/timeseries?keys=humidity,temp</p>
           <h4>Parameters</h4>
-          <p class="lead">keys=temperature,humidity,movement <br>
+          <p class="lead">keys=temperature,humidity <br>
             
          
           <hr>
@@ -110,13 +114,15 @@
           <hr>
           <h2>AUTHENTICATION SCHEMA</h2>
           <p class="lead">Basic </p>
-          <p class="lead">Username: tenant@mmu.edu.my <br>
-          Password: p@ssw0rd </p>
+          <p class="lead">Username: demo@mmudc.com <br>
+          Password: Demo_123 </p>
           <hr>
 
           <h2>QUERY HEADERS</h2>
           <p class="lead">Name: X-Authorization <br>
           Value: Bearer token</p>
+          <p class="lead">Name: Authorization <br>
+          Value: Bearer 2cf613f9-df94-33d0-a9de-13d07fb59f20</p>
 
           <hr>
 
